@@ -4,6 +4,7 @@ export const language = {
             "Ассос",
             "Курсҳо",
             "Зеркурсҳо",
+            "Дар бораи мо",
             "муроҷиат кардан",
         ]
 
@@ -13,6 +14,7 @@ export const language = {
             "Главная",
             "Курсы",
             "Подкурсы",
+            "О нас",
             "Подать заявку",
         ]
 
@@ -22,6 +24,7 @@ export const language = {
             "Home",
             "Curses",
             "Subcourses",
+            "About",
             "Apply",
         ]
     }
