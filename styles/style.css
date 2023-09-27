@@ -1,11 +1,11 @@
-*{
+* {
     padding: 0;
-        margin: 0;
+    margin: 0;
 }
 
 /* CHOOSE lange */
 
-.Site_Language{
+.Site_Language {
     position: absolute;
     display: flex;
     gap: 10px;
@@ -13,90 +13,70 @@
     right: 20px;
 }
 
-.Site_Language button{
-    background:none;
+.Site_Language button {
+    background: none;
     border: none;
     outline: none;
 }
 
-.Site_Language .active_btn{
+.Site_Language .active_btn {
     border-bottom: 1px solid black;
 }
 
-@media screen and (max-width: 768px) {
-    .Site_Language{
-        top:80px;
-        right:40%;
+
+
+@media screen and (max-width: 992px) {
+    .Site_Language {
+        position: relative;
+        /* top:80px; */
+        right: 0;
+        left: 40%;
+    }
+
+    #logo {
+        width: 80px;
+    }
+
+}
+
+#navbarNav {
+    font-size: larger;
+}
+
+.Hero {
+    background: url("/img/bg2\(blured\).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 650px;
+
+}
+
+.Pointer{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 798px) {
+    .Hero {
+        background-position: right;
+        height: auto;
+
     }
 }
 
-.Hero{
-    background: url("/img/bg1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 90vh;
-}
-
-/* Background main one */
-.bg_img{
-    position: absolute;
-    background-image: url("/img/bg1.jpg");
-    filter: blur(3px);
-    width: 100%;
-    height: 90vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 100%;
-    z-index: -10;
-}
-
-
-.Logo_text{
-    padding: 25px;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
-    text-align: center;
-
-}
-
- .Logo_text .Logo_name h2{
-    
-    font-weight: bold;
-    font-size: 50px;
-}
-
-.main .Logo_text .text p{
+#logotext {
     margin-top: 50px;
     font-size: 25px;
     font-weight: 500;
     margin-bottom: 50px;
-    
-}
-.Logo_text .text p{
-    outline-width: 200px;
-    outline: 1px;
-    outline-color: aliceblue;
+    color: rgb(255, 255, 255);
+
+    /* text-shadow: -1px 0 gray, 0 1px gray, 1px 0 gray, 0 -1px gray; */
+
 }
 
 
-.Button_block{
+.Button_block {
     text-align: center;
-}
-
-@media screen and (min-width: 768px) {
-    .Logo_text{
-        padding-top: 100px;
-        flex-direction: row;
-        /* justify-content: space-around; */
-    }
-
-    .Logo_text .Logo_name h2{
-        font-size: 100px;
-    }
-
-    .Logo_text .text p{
-        font-size: 50px;
-    }
 }
