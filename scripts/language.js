@@ -6,6 +6,10 @@ export const language = {
             "Зеркурсҳо",
             "Дар бораи мо",
             "муроҷиат кардан",
+        ],
+
+        main: [
+            "Яке аз беҳтарин марказҳои таълимӣ дар Тоҷикистон."
         ]
 
     },
@@ -16,6 +20,10 @@ export const language = {
             "Подкурсы",
             "О нас",
             "Подать заявку",
+        ],
+
+        main: [
+            "Один из лучших образовательных центров в Таджикистане."
         ]
 
     },
@@ -26,6 +34,10 @@ export const language = {
             "Subcourses",
             "About",
             "Apply",
+        ],
+
+        main: [
+            "One of the best educational centers in Tajikistan."
         ]
     }
 }
