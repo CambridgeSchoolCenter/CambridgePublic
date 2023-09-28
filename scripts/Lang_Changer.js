@@ -12,8 +12,8 @@ window.addEventListener("DOMContentLoaded", () => {
     let apply_btn = document.querySelector(".Hero div div div button");
 
     // Curse section
-    let CurseHeader = document.querySelector('#CurseHeader');
-    let CurseHeaders = document.querySelectorAll('#CurseCard h3');
+    let CurseHeader = document.querySelector('#CourseHeader');
+    let CurseHeaders = document.querySelectorAll('#CourseCard h3');
     let Medlist = document.querySelectorAll('.MedicineCurse ul li');
     let Sublist = document.querySelectorAll('.SubcurseCurse ul li');
     let LangCurse = document.querySelectorAll('.LanguageCurse ul li');
@@ -39,19 +39,19 @@ window.addEventListener("DOMContentLoaded", () => {
         CurseHeader.innerHTML = language[selected_lang].NAV[1];
 
         CurseHeaders.forEach((element, index) => {
-            element.innerHTML = language[selected_lang].Curse[index][0];
+            element.innerHTML = language[selected_lang].Course[index][0];
         });
 
         Medlist.forEach((element, index) =>{
-            element.innerHTML = language[selected_lang].Curse[0][index+1];
+            element.innerHTML = language[selected_lang].Course[0][index+1];
         })
 
         Sublist.forEach((element, index) =>{
-            element.innerHTML = language[selected_lang].Curse[1][index+1];
+            element.innerHTML = language[selected_lang].Course[1][index+1];
         })
 
         LangCurse.forEach((element, index) =>{
-            element.innerHTML = language[selected_lang].Curse[2][index+1];
+            element.innerHTML = language[selected_lang].Course[2][index+1];
         })
 
         // About

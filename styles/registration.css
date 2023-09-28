@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* CHOOSE lange */
+
+.Site_Language {
+    position: absolute;
+    display: flex;
+    gap: 10px;
+
+    right: 20px;
+}
+
+.Site_Language button {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.Site_Language .active_btn {
+    border-bottom: 1px solid black;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .Site_Language {
+        position: relative;
+        /* top:80px; */
+        right: 0;
+        left: 40%;
+    }
+
+    #logo {
+        width: 80px;
+    }
+
+}
+
+#navbarNav {
+    font-size: larger;
+}
+
+
+.gradient-custom {
+    background: url('/img/bg2\(blured\).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+    }
+    .card-registration .select-arrow {
+    top: 13px;
+    }

@@ -9,6 +9,7 @@
     position: absolute;
     display: flex;
     gap: 10px;
+    top: 50px;
 
     right: 20px;
 }
@@ -28,9 +29,9 @@
 @media screen and (max-width: 992px) {
     .Site_Language {
         position: relative;
-        /* top:80px; */
-        right: 0;
-        left: 40%;
+        top:0;
+        left:0;
+        align-self: center;
     }
 
     #logo {
@@ -56,15 +57,17 @@
 .Pointer{
     cursor: pointer;
 }
-
-@media screen and (max-width: 798px) {
+@media screen and (max-width: 992px) {
     .Hero {
         background-position: right;
         height: auto;
 
     }
+    
 }
-
+.Logo_text{
+    font-size: 50px;
+}
 #logotext {
     margin-top: 50px;
     font-size: 25px;

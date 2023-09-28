@@ -84,7 +84,7 @@ export const language = {
     EN: {
         NAV: [
             "Home",
-            "Our Curses",
+            "Our Courses",
             "About us",
             "Apply",
         ],
@@ -93,7 +93,7 @@ export const language = {
             "One of the best educational centers in Tajikistan"
         ],
 
-        Curse: [
+        Course: [
             [
                 "Medical courses",
                 "Junior medical officer",
