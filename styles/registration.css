@@ -30,12 +30,17 @@
         position: relative;
         /* top:80px; */
         right: 0;
-        left: 40%;
     }
 
     #logo {
         width: 80px;
     }
+
+    .Selects {
+        flex-direction: column;
+        gap: 50px;
+    }
+
 
 }
 
@@ -44,19 +49,35 @@
 }
 
 
-.gradient-custom {
+.bg {
     background: url('/img/bg2\(blured\).jpg');
     background-repeat: no-repeat;
+    background-attachment:fixed;
     background-size: cover;
-    background-position: center;
+    height: 100vh;
+    
+}
+
+@media screen and (max-width: 992px) {
+    .bg {
+        
+        height: auto;
+        
     }
+}
 
 .card-registration .select-input.form-control[readonly]:not([disabled]) {
     font-size: 1rem;
     line-height: 2.15;
     padding-left: .75em;
     padding-right: .75em;
-    }
-    .card-registration .select-arrow {
+}
+
+.card-registration .select-arrow {
     top: 13px;
-    }
+}
+
+
+.hide{
+    display: none;
+}

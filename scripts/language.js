@@ -11,7 +11,7 @@ export const language = {
             "Яке аз беҳтарин марказҳои таълимӣ дар Тоҷикистон"
         ],
 
-        Curse: [
+        Course: [
             [
                 "Курсҳои тиббӣ",
                 "Корманди хурди тиби",
@@ -37,7 +37,17 @@ export const language = {
                 "Олмони",
                 "Хитоӣ"
             ]
-        ]
+        ],
+        Registration: {
+            Apply: "Барои курс муроҷиат кунед",
+            FirstName: "Ном",
+            SecondName: "Насаб",
+            BirthDate: "Санаи таваллуд",
+            Gender: "Ҷинс",
+            Male: "Мард",
+            Female: "Зан",
+            Phone: "Рақами мобилӣ",
+        }
 
     },
     RU: {
@@ -52,7 +62,7 @@ export const language = {
             "Один из лучших образовательных центров в Таджикистане"
         ],
 
-        Curse: [
+        Course: [
             [
                 "Медицинские курсы",
                 "Младший медицинский работник",
@@ -78,7 +88,17 @@ export const language = {
                 "Немецкий",
                 "Китайский"
             ]
-        ]
+        ],
+        Registration: {
+            Apply: "Подать заявку на курс",
+            FirstName: "Имя",
+            SecondName: "Фомилия",
+            BirthDate: "Дата рождения",
+            Gender: "Пол",
+            Male: "Мужской",
+            Female: "Женский",
+            Phone: "Номер Телефона",
+        }
 
     },
     EN: {
@@ -119,6 +139,16 @@ export const language = {
                 "German",
                 "Chineese"
             ]
-        ]
+        ],
+        Registration: {
+            Apply: "Apply to course",
+            FirstName: "Name",
+            SecondName: "Surname",
+            BirthDate: "Date of birth",
+            Gender: "Gender",
+            Male: "Male",
+            Female: "Female",
+            Phone: "Phone number",
+        }
     }
 }

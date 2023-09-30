@@ -1,6 +1,12 @@
 import { language } from "./language.js";
 
 window.addEventListener("DOMContentLoaded", () => {
+
+    var currentDate = new Date();
+    var currentYear = currentDate.getFullYear();
+    document.getElementById("currentYear").innerHTML = currentYear;
+
+
     // lang btn
     let langs = document.querySelectorAll('.Site_Language button');
 
@@ -42,16 +48,16 @@ window.addEventListener("DOMContentLoaded", () => {
             element.innerHTML = language[selected_lang].Course[index][0];
         });
 
-        Medlist.forEach((element, index) =>{
-            element.innerHTML = language[selected_lang].Course[0][index+1];
+        Medlist.forEach((element, index) => {
+            element.innerHTML = language[selected_lang].Course[0][index + 1];
         })
 
-        Sublist.forEach((element, index) =>{
-            element.innerHTML = language[selected_lang].Course[1][index+1];
+        Sublist.forEach((element, index) => {
+            element.innerHTML = language[selected_lang].Course[1][index + 1];
         })
 
-        LangCurse.forEach((element, index) =>{
-            element.innerHTML = language[selected_lang].Course[2][index+1];
+        LangCurse.forEach((element, index) => {
+            element.innerHTML = language[selected_lang].Course[2][index + 1];
         })
 
         // About
