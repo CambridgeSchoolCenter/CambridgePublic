@@ -77,6 +77,12 @@
         </div>
     </nav>
 
+
+    <!-- Modal -->
+    <!-- Button trigger modal -->
+
+
+
     <!-- Regis section -->
 
     <section class="gradient-custom bg">
@@ -85,8 +91,8 @@
                 <div class="col-12 col-lg-9 col-xl-7">
                     <div class="card shadow-2-strong card-registration " style="border-radius: 15px;">
                         <div class="card-body p-4 p-md-5 ">
-                            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 ">Подать заявку на курс</h3>
-                            <form>
+                            <h3 id="Apply_Header" class="mb-4 pb-2 pb-md-0 mb-md-5 ">Подать заявку на курс</h3>
+                            <form method="post" action="http://192.168.0.112:3002/registration" enctype="application/json">
 
                                 <div class="row">
                                     <!-- NAME -->
@@ -94,7 +100,8 @@
 
 
                                         <div class="form-outline">
-                                            <input required type="text" id="firstName" class="form-control form-control-lg" />
+                                            <input  id="firstName"  type="text"  name="name"
+                                                class="form-control form-control-lg"  required/>
                                             <label class="form-label" for="firstName" id="firstNameLabel">Имя</label>
                                         </div>
 
@@ -104,37 +111,44 @@
                                     <div class="col-md-6 mb-4">
 
                                         <div class="form-outline">
-                                            <input required type="text" id="lastName" class="form-control form-control-lg" />
+                                            <input id="lastName" required type="text" name="surname"
+                                                class="form-control form-control-lg" />
                                             <label class="form-label" for="lastName" id="lastNameLabel">Фомилия</label>
                                         </div>
 
                                     </div>
                                 </div>
 
-                                <!-- BIRTHDATE -->
+                                <!-- BIRTHDATE  and Gender -->
                                 <div class="row">
                                     <div class="col-md-6 mb-4 d-flex align-items-center">
 
                                         <div class="form-outline datepicker w-100">
-                                            <input required type="date" class="form-control form-control-lg"  />
-                                            <label for="birthdayDate" class="form-label" id="birthdayDate">Дата рождения</label>
+                                            <input id="Birth" required type="date" name="date_of_birth"
+                                                class="form-control form-control-lg" />
+                                            <label for="birthdayDate" class="form-label" id="birthdayDate">Дата
+                                                рождения</label>
                                         </div>
 
                                     </div>
+                                    <!-- Gender -->
                                     <div class="col-md-6 mb-4">
 
                                         <h6 class="mb-2 pb-1" id="Gender">Пол: </h6>
 
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                id="femaleGender" value="option1" checked />
-                                            <label class="form-check-label" for="femaleGender" id="FeMale">Женский</label>
+                                            <input class="form-check-input" type="radio" name="gender"
+                                                id="maleGender" value="Male" checked />
+                                            <label class="form-check-label" for="maleGender" id="Male">Мужской</label>
                                         </div>
 
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                id="maleGender" value="option2" />
-                                            <label class="form-check-label" for="maleGender" id="Male">Мужской</label>
+
+
+                                            <input class="form-check-input" type="radio" name="gender"
+                                                id="femaleGender" value="Female" />
+                                            <label class="form-check-label" for="femaleGender"
+                                                id="FeMale">Женский</label>
                                         </div>
                                     </div>
                                 </div>
@@ -148,23 +162,49 @@
                                         <div class="form-outline">
                                             <div class="input-group">
                                                 <span class="input-group-text" id="basic-addon1">+992</span>
-                                                <input required type="number"
-                                                    id="phoneNumber" class="form-control form-control-lg" />
+                                                <input required type="number" id="phoneNumber" name="phone"
+                                                    class="form-control form-control-lg" />
                                             </div>
 
-                                            <label class="form-label" for="phoneNumber" id="phoneNumberLabel">Номер телефона</label>
+                                            <label class="form-label" for="phoneNumber" id="phoneNumberLabel">Номер
+                                                телефона</label>
                                         </div>
 
                                     </div>
 
-                                    <div class="col-md-6 mb-4 pb-2">
+                                    <div class="col-md-6 mb-4 pb-2 ">
 
                                         <!-- COURSE -->
-                                        <select class="select form-select-lg  form-select" required>
-                                            <option value="1" disabled selected>Вибирите Курс</option>
-                                            <option value="2">Subject 1</option>
-                                            <option value="3">Subject 2</option>
-                                            <option value="4">Subject 3</option>
+                                        <select id="CourseSelect" class="select form-select-lg  form-select" name="course">
+                                            <option value="nothing" disabled selected>Вибирите Курс</option>
+
+                                            <!-- Langauge courses -->
+                                            <optgroup label="Языковие Курсы">
+                                                <option value="english">Английский</option>
+                                                <option value="german">Немецкий</option>
+                                                <option value="russian">Русский</option>
+                                                <option value="chineese">Китайский</option>
+                                            </optgroup>
+
+                                            <!-- SubCourses -->
+                                            <optgroup label="Подкурсы">
+                                                <option value="tajik">Таджиский</option>
+                                                <option value="physic">Физика</option>
+                                                <option value="chemistry">Химия</option>
+                                                <option value="biology">Биология</option>
+                                            </optgroup>
+
+                                            <!-- Medicine Courses -->
+                                            <optgroup label="Медицинские курсы">
+                                                <option value="JuniarMedicalOfficer">Младший медицинский работник
+                                                </option>
+                                                <option value="FirstMecical">Первая медицинская помощь</option>
+                                                <option value="injection">Укол</option>
+                                                <option value="acapella">Акапел</option>
+                                                <option value="pressure gauge">Манометр</option>
+                                                <option value="studyingMedicine">Изучение медикаментов</option>
+                                                <option value="massage">Массаж</option>
+                                            </optgroup>
                                         </select>
 
                                     </div>
@@ -176,19 +216,19 @@
 
 
                                     <!-- LEVEL-->
-                                    <select class="select form-control-lg hide">
-                                        <option value="1" disabled selected>Вибирите Уровень</option>
-                                        <option value="2">Subject 1</option>
-                                        <option value="3">Subject 2</option>
-                                        <option value="4">Subject 3</option>
+                                    <select class="select form-select-lg  form-select SelectLevel  hide " name="level">
+                                        <option value="nothing" disabled selected></option>
                                     </select>
                                 </div>
 
 
 
                                 <div class="mt-4 pt-2">
-                                    <input class="btn btn-primary btn-lg" type="submit" value="Подать заявку" />
+                                    <input type="submit" id="submit_btn" class="btn btn-primary btn-lg" 
+                                        value="Подать заявку" />
                                 </div>
+
+
 
 
                             </form>
@@ -201,8 +241,11 @@
 
 
 
+
 </body>
-<script src="/scripts/script.js">
+
+<script src="/scripts/axios.min.js"></script>
+<script src="/scripts/script.js" type="module">
 
 </script>
 

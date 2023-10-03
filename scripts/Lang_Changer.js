@@ -2,6 +2,9 @@ import { language } from "./language.js";
 
 window.addEventListener("DOMContentLoaded", () => {
 
+
+
+
     var currentDate = new Date();
     var currentYear = currentDate.getFullYear();
     document.getElementById("currentYear").innerHTML = currentYear;
@@ -18,8 +21,9 @@ window.addEventListener("DOMContentLoaded", () => {
     let apply_btn = document.querySelector(".Hero div div div button");
 
     // Curse section
-    let CurseHeader = document.querySelector('#CourseHeader');
-    let CurseHeaders = document.querySelectorAll('#CourseCard h3');
+    let CourseHeader = document.querySelector('#CourseHeader');
+    let CourseHeaders = document.querySelectorAll('.CourseH');
+    console.log(CourseHeaders);
     let Medlist = document.querySelectorAll('.MedicineCurse ul li');
     let Sublist = document.querySelectorAll('.SubcurseCurse ul li');
     let LangCurse = document.querySelectorAll('.LanguageCurse ul li');
@@ -42,9 +46,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
         ////////// Curse //////////
         // head
-        CurseHeader.innerHTML = language[selected_lang].NAV[1];
+        CourseHeader.innerHTML = language[selected_lang].NAV[1];
 
-        CurseHeaders.forEach((element, index) => {
+        CourseHeaders.forEach((element, index) => {
             element.innerHTML = language[selected_lang].Course[index][0];
         });
 
@@ -75,10 +79,30 @@ window.addEventListener("DOMContentLoaded", () => {
             });
             lang.classList.add('active_btn');
 
+            localStorage.setItem('language', lang.innerHTML);
             LangChangeHandle(lang.innerHTML);
 
         });
     });;
+
+
+    if (localStorage.getItem('language') === null) {
+        localStorage.setItem('language', 'RU');
+        LangChangeHandle(localStorage.getItem('language'));
+    } else {
+        
+        LangChangeHandle(localStorage.getItem('language'));
+        Array.from(langs).map((lang) => {
+            lang.classList.remove('active_btn');
+
+            if(lang.innerHTML === localStorage.getItem('language')){
+                lang.classList.add('active_btn');
+            }
+        });;
+
+        
+    }
+
 
 
 

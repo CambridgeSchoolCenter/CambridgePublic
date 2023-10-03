@@ -32,9 +32,9 @@ export const language = {
             ],
             [
                 "Курсҳои забон",
-                "Русӣ",
                 "Англисӣ",
                 "Олмони",
+                "Русӣ",
                 "Хитоӣ"
             ]
         ],
@@ -47,6 +47,10 @@ export const language = {
             Male: "Мард",
             Female: "Зан",
             Phone: "Рақами мобилӣ",
+            Choose: "Сатҳеро, ки мехоҳед таҳсил кунед, интихоб кунед",
+            Course: "Курсро интихоб кунед",
+            CourseNotSelected: "Лутфан курсро интихоб кунед",
+            LevelNotSelected: "Лутфан сатҳеро, ки мехоҳед таҳсил кунед, интихоб кунед"
         }
 
     },
@@ -82,10 +86,10 @@ export const language = {
                 "Биология"
             ],
             [
-                "Языковие Курсы",
-                "Русский",
+                "Языковые Курсы",
                 "Английский",
                 "Немецкий",
+                "Русский",
                 "Китайский"
             ]
         ],
@@ -98,6 +102,10 @@ export const language = {
             Male: "Мужской",
             Female: "Женский",
             Phone: "Номер Телефона",
+            Choose: "Выберите уровень, который вы хотите изучать",
+            Course: "Выберите Курс",
+            CourseNotSelected: "Пожалуйста, выберите курс",
+            LevelNotSelected: "Пожалуйста, выберите уровень, который вы хотите изучать"
         }
 
     },
@@ -128,15 +136,15 @@ export const language = {
             [
                 "Subcourses",
                 "Tajik",
-                "Chemistry",
                 "Physics",
+                "Chemistry",
                 "Biology"
             ],
             [
                 "Language Courses",
-                "Russian",
                 "English",
                 "German",
+                "Russian",
                 "Chineese"
             ]
         ],
@@ -149,6 +157,42 @@ export const language = {
             Male: "Male",
             Female: "Female",
             Phone: "Phone number",
+            Choose: "Choose level you want to study",
+            Course: "Choose Course",
+            CourseNotSelected: "Please select a course",
+            LevelNotSelected: "Please select the level you want to study"
         }
-    }
+    },
+
+    levels: [
+        [
+            "Beginer",
+            "Elementry",
+            "Pre-Intermediate",
+            "Intermediate",
+            "Upper-Intermediate",
+            "Advanced",
+            "Preperation for TOEFL",
+        ],
+        [
+            "A1",
+            "A2",
+            "A3",
+            "B1",
+            "B2",
+            "B3",
+            "C1",
+            "C2",
+            "C3"
+        ],
+        [
+            "Начинающий",
+            "Продвинутый"
+        ],
+        [
+            "Level 1",
+            "Level 2",
+            "Level 3"
+        ],
+    ]
 }
