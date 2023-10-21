@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cambridge School Learning Center</title>
 
+    <!-- Logo icon -->
+    <link rel="icon" type="image/x-icon" href="/img/logo.ico">
+
     <!-- CSS STYLES -->
     <link rel="stylesheet" href="/styles/bootstrap.min.css">
     <link rel="stylesheet" href="/styles/registration.css">
@@ -26,7 +29,7 @@
         <div class="container-fluid  justify-content-center">
 
             <!-- LOGO -->
-            <a class="navbar-brand" href="/html/index.html">
+            <a class="navbar-brand" href="/index.html">
                 <img src="/img/logo.png" alt="Bootstrap" width="120" height="auto" id="logo">
 
                 <span class="fs-1">Cambridge School</span>
@@ -92,7 +95,8 @@
                     <div class="card shadow-2-strong card-registration " style="border-radius: 15px;">
                         <div class="card-body p-4 p-md-5 ">
                             <h3 id="Apply_Header" class="mb-4 pb-2 pb-md-0 mb-md-5 ">Подать заявку на курс</h3>
-                            <form method="post" action="http://192.168.0.111:3002/registration" enctype="application/json">
+                            <form method="post" action="http://192.168.0.111:3002/registration"
+                                enctype="application/json">
 
                                 <div class="row">
                                     <!-- NAME -->
@@ -100,8 +104,8 @@
 
 
                                         <div class="form-outline">
-                                            <input  id="firstName"  type="text"  name="name"
-                                                class="form-control form-control-lg"  required/>
+                                            <input id="firstName" type="text" name="name"
+                                                class="form-control form-control-lg" required />
                                             <label class="form-label" for="firstName" id="firstNameLabel">Имя</label>
                                         </div>
 
@@ -137,16 +141,16 @@
                                         <h6 class="mb-2 pb-1" id="Gender">Пол: </h6>
 
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="gender"
-                                                id="maleGender" value="Мужской" checked />
+                                            <input class="form-check-input" type="radio" name="gender" id="maleGender"
+                                                value="Мужской" checked />
                                             <label class="form-check-label" for="maleGender" id="Male">Мужской</label>
                                         </div>
 
                                         <div class="form-check form-check-inline">
 
 
-                                            <input class="form-check-input" type="radio" name="gender"
-                                                id="femaleGender" value="Женский" />
+                                            <input class="form-check-input" type="radio" name="gender" id="femaleGender"
+                                                value="Женский" />
                                             <label class="form-check-label" for="femaleGender"
                                                 id="FeMale">Женский</label>
                                         </div>
@@ -175,7 +179,8 @@
                                     <div class="col-md-6 mb-4 pb-2 ">
 
                                         <!-- COURSE -->
-                                        <select id="CourseSelect" class="select form-select-lg  form-select" name="course">
+                                        <select id="CourseSelect" class="select form-select-lg  form-select"
+                                            name="course">
                                             <option value="nothing" disabled selected>Вибирите Курс</option>
 
                                             <!-- Langauge courses -->
@@ -195,10 +200,12 @@
                                             </optgroup>
 
                                             <!-- Medicine Courses -->
-                                            <optgroup  label="Медицинские курсы">
-                                                <option value="Младший медицинский работник">Младший медицинский работник
+                                            <optgroup label="Медицинские курсы">
+                                                <option value="Младший медицинский работник">Младший медицинский
+                                                    работник
                                                 </option>
-                                                <option value="Первая медицинская помощь">Первая медицинская помощь</option>
+                                                <option value="Первая медицинская помощь">Первая медицинская помощь
+                                                </option>
                                                 <option value="Укол">Укол</option>
                                                 <option value="Акапелла">Акапел</option>
                                                 <option value="Манометр">Манометр</option>
@@ -224,7 +231,7 @@
 
 
                                 <div class="mt-4 pt-2">
-                                    <input type="submit" id="submit_btn" class="btn btn-primary btn-lg" 
+                                    <input type="submit" id="submit_btn" class="btn btn-primary btn-lg"
                                         value="Подать заявку" />
                                 </div>
 
