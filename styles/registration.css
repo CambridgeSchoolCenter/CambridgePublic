@@ -4,23 +4,44 @@
 }
 
 /* CHOOSE lange */
+/* CHOOSE lange */
 
 .Site_Language {
     position: absolute;
     display: flex;
     gap: 10px;
-
+    top: 35%;
     right: 20px;
 }
 
-.Site_Language button {
+.Site_Language .lang_btn {
     background: none;
     border: none;
     outline: none;
+    position: relative;
+    /* Add this to make it a positioning context */
 }
 
-.Site_Language .active_btn {
-    border-bottom: 1px solid black;
+.lang_btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    background-color: black;
+    transform: translateX(-50%);
+    /* Center the underline */
+    /* Change to your desired color */
+    transition: width 0.4s ease-in-out;
+}
+
+.Site_Language .lang_btn:hover::after {
+    width: 100%;
+}
+
+.lang_btn.active_btn::after {
+    width: 100%;
 }
 
 
@@ -52,17 +73,17 @@
 .bg {
     background: url('/img/bg2\(blured\).jpg');
     background-repeat: no-repeat;
-    background-attachment:fixed;
+    background-attachment: fixed;
     background-size: cover;
     height: 100vh;
-    
+
 }
 
 @media screen and (max-width: 992px) {
     .bg {
-        
+
         height: auto;
-        
+
     }
 }
 
@@ -78,6 +99,14 @@
 }
 
 
-.hide{
+.hide {
     display: none;
+}
+
+
+/* For removing arrows in phone input */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }

@@ -92,7 +92,7 @@
                     <div class="card shadow-2-strong card-registration " style="border-radius: 15px;">
                         <div class="card-body p-4 p-md-5 ">
                             <h3 id="Apply_Header" class="mb-4 pb-2 pb-md-0 mb-md-5 ">Подать заявку на курс</h3>
-                            <form method="post" action="http://192.168.0.112:3002/registration" enctype="application/json">
+                            <form method="post" action="http://192.168.0.111:3002/registration" enctype="application/json">
 
                                 <div class="row">
                                     <!-- NAME -->
@@ -138,7 +138,7 @@
 
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="gender"
-                                                id="maleGender" value="Male" checked />
+                                                id="maleGender" value="Мужской" checked />
                                             <label class="form-check-label" for="maleGender" id="Male">Мужской</label>
                                         </div>
 
@@ -146,7 +146,7 @@
 
 
                                             <input class="form-check-input" type="radio" name="gender"
-                                                id="femaleGender" value="Female" />
+                                                id="femaleGender" value="Женский" />
                                             <label class="form-check-label" for="femaleGender"
                                                 id="FeMale">Женский</label>
                                         </div>
@@ -180,30 +180,30 @@
 
                                             <!-- Langauge courses -->
                                             <optgroup label="Языковие Курсы">
-                                                <option value="english">Английский</option>
-                                                <option value="german">Немецкий</option>
-                                                <option value="russian">Русский</option>
-                                                <option value="chineese">Китайский</option>
+                                                <option value="Английский">Английский</option>
+                                                <option value="Немецкий">Немецкий</option>
+                                                <option value="Русский">Русский</option>
+                                                <option value="Китайский">Китайский</option>
                                             </optgroup>
 
                                             <!-- SubCourses -->
-                                            <optgroup label="Подкурсы">
-                                                <option value="tajik">Таджиский</option>
-                                                <option value="physic">Физика</option>
-                                                <option value="chemistry">Химия</option>
-                                                <option value="biology">Биология</option>
+                                            <optgroup value="subcourses" name="subcourse_c" label="Подкурсы">
+                                                <option value="Таджиский">Таджиский</option>
+                                                <option value="Химия">Химия</option>
+                                                <option value="Физика">Физика</option>
+                                                <option value="Биология">Биология</option>
                                             </optgroup>
 
                                             <!-- Medicine Courses -->
-                                            <optgroup label="Медицинские курсы">
-                                                <option value="JuniarMedicalOfficer">Младший медицинский работник
+                                            <optgroup  label="Медицинские курсы">
+                                                <option value="Младший медицинский работник">Младший медицинский работник
                                                 </option>
-                                                <option value="FirstMecical">Первая медицинская помощь</option>
-                                                <option value="injection">Укол</option>
-                                                <option value="acapella">Акапел</option>
-                                                <option value="pressure gauge">Манометр</option>
-                                                <option value="studyingMedicine">Изучение медикаментов</option>
-                                                <option value="massage">Массаж</option>
+                                                <option value="Первая медицинская помощь">Первая медицинская помощь</option>
+                                                <option value="Укол">Укол</option>
+                                                <option value="Акапелла">Акапел</option>
+                                                <option value="Манометр">Манометр</option>
+                                                <option value="Изучение медикаментов">Изучение медикаментов</option>
+                                                <option value="Массаж">Массаж</option>
                                             </optgroup>
                                         </select>
 

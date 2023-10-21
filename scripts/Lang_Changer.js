@@ -41,7 +41,7 @@ window.addEventListener("DOMContentLoaded", () => {
         })
 
         // Logo and Apply btns
-        logo_main_text.innerHTML = language[selected_lang].main[0];
+        logo_main_text.innerHTML = language[selected_lang].main[0].toUpperCase();;
         apply_btn.innerHTML = language[selected_lang].NAV[3]
 
         ////////// Curse //////////

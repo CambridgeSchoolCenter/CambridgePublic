@@ -1,6 +1,8 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* CHOOSE lange */
@@ -10,18 +12,37 @@
     display: flex;
     gap: 10px;
     top: 35%;
-
     right: 20px;
 }
 
-.Site_Language button {
+.Site_Language .lang_btn {
     background: none;
     border: none;
     outline: none;
+    position: relative;
+    /* Add this to make it a positioning context */
 }
 
-.Site_Language .active_btn {
-    border-bottom: 1px solid black;
+.lang_btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    background-color: black;
+    transform: translateX(-50%);
+    /* Center the underline */
+    /* Change to your desired color */
+    transition: width 0.4s ease-in-out;
+}
+
+.Site_Language .lang_btn:hover::after {
+    width: 100%;
+}
+
+.lang_btn.active_btn::after {
+    width: 100%;
 }
 
 
@@ -29,8 +50,8 @@
 @media screen and (max-width: 992px) {
     .Site_Language {
         position: relative;
-        top:0;
-        left:0;
+        top: 0;
+        left: 0;
         align-self: center;
     }
 
@@ -54,28 +75,33 @@
 
 }
 
-.Pointer{
+.Pointer {
     cursor: pointer;
 }
+
 @media screen and (max-width: 992px) {
     .Hero {
         background-position: left;
         height: auto;
 
     }
-    
+
 }
-.Logo_text{
+
+.Logo_text {
     font-size: 50px;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
+
 #logotext {
     margin-top: 50px;
-    font-size: 25px;
+    font-size: 21px;
     font-weight: 500;
     margin-bottom: 50px;
     color: rgb(255, 255, 255);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 
-    /* text-shadow: -1px 0 gray, 0 1px gray, 1px 0 gray, 0 -1px gray; */
+
 
 }
 

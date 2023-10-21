@@ -6,11 +6,11 @@ window.addEventListener('DOMContentLoaded', () => {
     // Modal
 
     // DATA
-    let firstName = document.getElementById('firstName');
-    let lastName = document.getElementById('lastName');
-    let birthdayDate = document.getElementById('Birth');
-    let Gender = document.querySelector('input[type = radio]:checked');
-    let Phone = document.getElementById('phoneNumber');
+    // let firstName = document.getElementById('firstName');
+    // let lastName = document.getElementById('lastName');
+    // let birthdayDate = document.getElementById('Birth');
+    // let Gender = document.querySelector('input[type = radio]:checked');
+    // let Phone = document.getElementById('phoneNumber');
     let SelectLevel = document.querySelector('.SelectLevel');
     var Course = document.querySelector("#CourseSelect");
 
@@ -72,7 +72,7 @@ window.addEventListener('DOMContentLoaded', () => {
     //     //         console.error(error);
     //     //     });
     //     console.log("Helloasdasdf sd");
-            
+
     //     // axios.get('http://192.168.0.112:3002/students')
     //     // .then(response => {
     //     //     // Handle the successful response
@@ -82,7 +82,7 @@ window.addEventListener('DOMContentLoaded', () => {
     //     //     // Handle the error
     //     //     console.error(error);
     //     // });
-        
+
 
     //     // After...
 
@@ -92,6 +92,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
     // })
+
+
+
 
 
 });
