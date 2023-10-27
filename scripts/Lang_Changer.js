@@ -19,14 +19,14 @@ window.addEventListener("DOMContentLoaded", () => {
     // Hero section
     let logo_main_text = document.querySelector('.Hero div div p');
     let apply_btn = document.querySelector(".Hero div div div button");
+    let apply_btn2 = document.querySelector(".About div div div button");
 
     // Curse section
     let CourseHeader = document.querySelector('#CourseHeader');
     let CourseHeaders = document.querySelectorAll('.CourseH');
-    console.log(CourseHeaders);
-    let Medlist = document.querySelectorAll('.MedicineCurse ul li');
-    let Sublist = document.querySelectorAll('.SubcurseCurse ul li');
-    let LangCurse = document.querySelectorAll('.LanguageCurse ul li');
+    let Medlist = document.querySelectorAll('.MedicineCourse ul li');
+    let Sublist = document.querySelectorAll('.SubcurseCourse ul li');
+    let LangCurse = document.querySelectorAll('.LanguageCourse ul li');
 
     //About section
 
@@ -42,7 +42,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
         // Logo and Apply btns
         logo_main_text.innerHTML = language[selected_lang].main[0].toUpperCase();;
-        apply_btn.innerHTML = language[selected_lang].NAV[3]
+        apply_btn.innerHTML = language[selected_lang].NAV[3];
+        apply_btn2.innerHTML = language[selected_lang].NAV[3];
 
         ////////// Curse //////////
         // head
@@ -52,6 +53,7 @@ window.addEventListener("DOMContentLoaded", () => {
             element.innerHTML = language[selected_lang].Course[index][0];
         });
 
+        console.log
         Medlist.forEach((element, index) => {
             element.innerHTML = language[selected_lang].Course[0][index + 1];
         })
