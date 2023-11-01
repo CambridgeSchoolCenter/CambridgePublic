@@ -20,7 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
     let submit_btn = document.getElementById('submit_btn');
 
 
-    Course.addEventListener('click', () => {
+    Course.addEventListener('change', () => {
 
         if (Course.selectedIndex > 0 && Course.selectedIndex < 5) {
             SelectLevel.innerHTML = `<option value="nothing" disabled selected>${language[localStorage.getItem('language')].Registration.Choose}</option>`;
